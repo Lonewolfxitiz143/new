@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documents</title>
     <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    
+
     
 </head>
 
@@ -20,8 +23,9 @@
             <button type="button" class="t-btn" onclick="register()"> register</button>
 
         </div>
-        <form id="login" action="dashboard.php" class="input-group" >
+        <form id="login" action="dashboard.php" class="input-group" onclick="return login()" >
             <input type="number" class="input-field" id="uname" placeholder=" Voter id">
+            <p id="v" style="font-style: bold; color: red;"></p>
            
             <input type="password" class="input-field" id="pass" placeholder="Password">
             
@@ -37,25 +41,17 @@
 
 
 
-        <form id="Register" action="../voting-project/api/register.php" method="post" class="input-group" enctype="multipart/form-data">
-            <input type="number" class="input-flag" id="uname1" name="name" placeholder=" Voter id number" >
+        <form id="Register" action="../voting-project/api/register.php" method="post" class="input-group"  enctype="multipart/form-data">
+            <input type="number" class="input-flag" id="uname1" name="name" placeholder="Voter id number" >
             
             <input type="password" class="input-flag" id="pass1" name="pass" placeholder="Password">
 
-            <input type="text" class="input-flag" id="add"  name ="add" placeholder="  Address">
+            <input type="text" class="input-flag" id="add"  name ="add" placeholder="Address">
 
-            <p style="font-size: medium;font-style: oblique;">citizenship photo</p>
+            <p style="font-size: medium;font-style: oblique;">citizenship id photo</p>
             <input type="file" class="input-flag" id="file" name="cphoto"> 
 
-            <p style="font-size: medium;font-style: oblique;">voter card photo</p>
-            <input type="file" class="input-flag" id="v_file" name="vphoto" >
-            <p style="font-size: medium; font-style: oblique;">gender</p>
-            <input type="radio" id="male" name="gender" value="male" class="gender">
-            <label for="male">male</label>
-            <input type="radio" id="female" name="gender" value="female" class="gender">
-            <label for="female">female</label>
-            <input type="radio" id="other" name="gender" value="other" class="gender">
-            <label for="other">other</label>
+            
             
             <select name="role" id="role" name="role" class="input-field">
                 <option value="1">voter</option>
@@ -74,7 +70,8 @@
     </div>
    
 </body>
-<script src="main.js"></script>
+<script src="login.js"></script>
+
    
 
 

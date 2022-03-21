@@ -84,17 +84,14 @@ outline: none;
 left: 450px;
 
 }
-.gender{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+
 .n1{
     color: red;
 }
 .input-flag{
     width: 100%;
     padding: 3px;
-    margin:4px 0;
+    margin: 7px 0;
     border-top: 0;
 border-right: 0;
 border-left: 0;

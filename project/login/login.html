@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <h1 class="head">online-voting-project</h1>
+    <hr> </hr>
+    <div class="container">
+
+<form action="" class="form-cont" onsubmit=" return login()">
+<h2 class="heading"> login here!</h2>   
+<hr class="h">
+<div class="q">
+<input type="number" name="user" id="user" placeholder="  Voter or Group Id" class="input-field">
+<p style="text-align: center;" id="u"></p>
+<input type="password" name="pass" id="pass" placeholder="  Password" class="input-field">
+<p style="text-align: center;" id="p"></p>
+<select name="role" id="role" class="input-field">
+    <p id="r"></p>
+    <option value="role">Voter</option>
+    <option value="role">Group</option>
+</select>
+
+</div>
+<button class="btn" type="submit">login</button> <br>
+          <a class="register" href="../register/register.html">Register here!</a>
+</form>
+
+
+        
+    </div>
+</body>
+</html>
