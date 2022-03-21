@@ -1,0 +1,32 @@
+*{
+padding: 0;
+margin: 0;
+
+}
+body{
+    background-color: rgb(158, 154, 243);
+}
+
+.btn-head{
+width: 60px;
+margin: 5px 1200px;
+margin-bottom: 20px;
+position: relative;
+
+border-radius: 30px;
+}
+.log{
+padding: 8px;
+margin: auto;
+outline: none;
+border-radius: 1rem;
+background: linear-gradient(#e1e6eb,#3f408d);
+border: none;
+width: 60px;
+font-style: oblique;
+font-size: 14px;
+}
+.headline{
+    text-align: center;
+    margin-top: 20px;
+}

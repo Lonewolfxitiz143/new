@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+
+<body>
+
+    <div class="side">
+
+        <div class="btn-box">
+            <div id="btn"> </div>
+            <button type="button" class="t-btn" onclick="login()"> login</button>
+            <button type="button" class="t-btn" onclick="register()"> register</button>
+
+        </div>
+        <form id="login" action="dashboard.php" class="input-group" >
+            <input type="number" class="input-field" id="uname" placeholder=" Voter id">
+           
+            <input type="password" class="input-field" id="pass" placeholder="Password">
+            
+            <select name="role" id="role" class="input-field">
+                <option value="1">voter</option>
+                <option value="2">group</option>
+
+            </select>
+            <button class="sub_btn" type="submit"> login</button>
+        </form>
+
+
+
+
+
+        <form id="Register" action="../voting-project/api/register.php" method="post" class="input-group" enctype="multipart/form-data">
+            <input type="number" class="input-flag" id="uname1" name="name" placeholder=" Voter id number" >
+            
+            <input type="password" class="input-flag" id="pass1" name="pass" placeholder="Password">
+
+            <input type="text" class="input-flag" id="add"  name ="add" placeholder="  Address">
+
+            <p style="font-size: medium;font-style: oblique;">citizenship photo</p>
+            <input type="file" class="input-flag" id="file" name="cphoto"> 
+
+            <p style="font-size: medium;font-style: oblique;">voter card photo</p>
+            <input type="file" class="input-flag" id="v_file" name="vphoto" >
+            <p style="font-size: medium; font-style: oblique;">gender</p>
+            <input type="radio" id="male" name="gender" value="male" class="gender">
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="female" class="gender">
+            <label for="female">female</label>
+            <input type="radio" id="other" name="gender" value="other" class="gender">
+            <label for="other">other</label>
+            
+            <select name="role" id="role" name="role" class="input-field">
+                <option value="1">voter</option>
+                <option value="2">group</option>
+
+            </select>
+
+            <button class="sub_btn" type="submit"> Register</button>
+        </form>
+
+
+    </div>
+ 
+
+
+    </div>
+   
+</body>
+<script src="main.js"></script>
+   
+
+
+</html>
