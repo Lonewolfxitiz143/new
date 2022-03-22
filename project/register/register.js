@@ -1,23 +1,21 @@
 function validate() {
     let user = document.getElementById("user");
     let pass = document.getElementById("pass");
-    let gender = document.form.gender;
-    flag = 1;
-    for (i = 0; i < gender.length; i++) {
-        if (gender[i].checked == true) {
-            return true;
+    let x=document.form.gender;
+    for(i=0; i<x.length;i++)
+        if(x[i].checked==true){
+            flag=1;
         }
-        else {
-            document.getElementById("m").innerHTML = "*please select your gender"
-            return false;
+        else{
+            document.getElementById("m").innerHTML="*Please select your gender";
+            flag=0;
         }
-
-    }
+    
+    
     if (user.value == "") {
         document.getElementById("u").innerHTML = "*user id required";
         flag = 0;
     }
-    
     else {
         document.getElementById("u").innerHTML = "";
         flag = 1;
@@ -26,9 +24,9 @@ function validate() {
         document.getElementById("p").innerHTML = "*password required";
         flag = 0;
     }
-
-    else if(pass.value.length<=7){
-        document.getElementById("p").innerHTML="*password must contain at least 8 character";
+    else if(pass.value.length<=7)
+    {
+        document.getElementById("p").innerHTML="*password length must be 8 or above";
         flag=0;
 
 
@@ -44,6 +42,9 @@ function validate() {
     else {
         return false;
     }
+
+
+
 
 
 }

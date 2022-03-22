@@ -1,0 +1,29 @@
+*{
+
+    padding: 0%;
+    margin: 0;
+    
+    }
+    body{
+        background-color: rgb(96, 96, 133);
+    }
+    .head{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 70px;
+       
+       }
+       .btn{
+      float: right;
+      padding: 10px;
+      margin-right: 10px;
+      cursor: pointer;
+      background: linear-gradient(#dde7eb,#0835cc);
+      border: 0;
+      outline: none;
+      border-radius: 0.35rem;
+      font-style: normal;
+        font-size: medium;
+    
+
+       }

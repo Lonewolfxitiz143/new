@@ -16,7 +16,7 @@
     </hr>
     <div class="container">
 
-        <form action="" class="form-cont" onsubmit="return validate()" name="form">
+        <form action="" class="form-cont" onsubmit=" return validate()" name="form">
             <h2 class="heading"> Register here!</h2>
             <hr class="h">
             <div class="q">
@@ -33,15 +33,17 @@
                     <option value="province">Karnali Pradesh</option>
                     <option value="province">Sudurpashchim Pradesh</option>
                 </select>
+                <input type="text" name="addr" id="addr" placeholder="  Address" class="input-field">
                 <div class="gender">
                     <p style="font-size: medium; margin-bottom: 10px;">Gender</p>
                     <input type="radio" name="gender" value="male" id="male"> Male
                     <input type="radio" name="gender" value="female" id="male">Female
-                    <p id="m"></p>
+                    <p style="font-size: medium; margin-bottom: 10px; margin-top: 5px; text-align: center;" id="m"></p>
                 </div>
                 <p style=" margin-left: 60px; margin-top: 10px; font-size: medium; font-style: italic;">Citizenship
                     photo</p>
-                <input type="file" name="photo" id="photo" class="input-field">
+                <input type="file" name="photo" id="photo" class="input-field" onchange=" return validate()">
+                <p id="ram"></p>
                 <select name="role" id="role" class="input-field">
                     <option value="role">Voter</option>
                     <option value="role">Group</option>
