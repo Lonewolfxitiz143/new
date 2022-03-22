@@ -16,7 +16,7 @@
     </hr>
     <div class="container">
 
-        <form action="../api/register.php" class="form-cont" onsubmit=" return validate()" name="form" method="post">
+        <form action="../api/register.php" class="form-cont" onsubmit=" return validate()" name="form" method="post" enctype="multipart/form-data">
             <h2 class="heading"> Register here!</h2>
             <hr class="h">
             <div class="q">
@@ -36,8 +36,8 @@
                 <input type="text" name="addr" id="addr" placeholder="  Address" class="input-field">
                 <div class="gender">
                     <p style="font-size: medium; margin-bottom: 10px;">Gender</p>
-                    <input type="radio" name="gender" value="male" id="male"> Male
-                    <input type="radio" name="gender" value="female" id="male">Female
+                    <input type="radio" name="gender" value="1" id="male"> Male
+                    <input type="radio" name="gender" value="2" id="male">Female
                     <p style="font-size: medium; margin-bottom: 10px; margin-top: 5px; text-align: center;" id="m"></p>
                 </div>
                 <p style=" margin-left: 60px; margin-top: 10px; font-size: medium; font-style: italic;">Citizenship
