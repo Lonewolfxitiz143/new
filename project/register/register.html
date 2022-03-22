@@ -16,11 +16,11 @@
     </hr>
     <div class="container">
 
-        <form action="" class="form-cont" onsubmit=" return validate()" name="form">
+        <form action="../api/register.php" class="form-cont" onsubmit=" return validate()" name="form" method="post">
             <h2 class="heading"> Register here!</h2>
             <hr class="h">
             <div class="q">
-                <input type="number" name="user" id="user" placeholder="  Voter or Group Id" class="input-field">
+                <input type="number" name="name" id="user" placeholder="  Voter or Group Id" class="input-field">
                 <p style="text-align: center;" id="u"></p>
                 <input type="password" name="pass" id="pass" placeholder="  Password" class="input-field">
                 <p style="text-align: center;" id="p"></p>
@@ -45,8 +45,8 @@
                 <input type="file" name="photo" id="photo" class="input-field" onchange=" return validate()">
                 <p id="ram"></p>
                 <select name="role" id="role" class="input-field">
-                    <option value="role">Voter</option>
-                    <option value="role">Group</option>
+                    <option value="1">Voter</option>
+                    <option value="2">Group</option>
                 </select>
                 <button class="btn" type="submit">Register</button>
 
