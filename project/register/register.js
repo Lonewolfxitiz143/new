@@ -1,6 +1,12 @@
 function validate() {
     let user = document.getElementById("user");
     let pass = document.getElementById("pass");
+    
+    let btn = document.getElementById.onclick=
+        function(){
+            window.location="../login/login.html";
+        }
+
     let x=document.form.gender;
     for(i=0; i<x.length;i++)
         if(x[i].checked==true){
@@ -42,9 +48,6 @@ function validate() {
     else {
         return false;
     }
-
-
-
 
 
 }

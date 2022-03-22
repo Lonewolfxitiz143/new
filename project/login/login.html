@@ -13,7 +13,7 @@
     <hr> </hr>
     <div class="container">
 
-<form action="" class="form-cont" onsubmit=" return login()">
+<form action="../api/login.php" class="form-cont" onsubmit=" return login()"method="POST">
 <h2 class="heading"> login here!</h2>   
 <hr class="h">
 <div class="q">
@@ -23,8 +23,8 @@
 <p style="text-align: center;" id="p"></p>
 <select name="role" id="role" class="input-field">
     <p id="r"></p>
-    <option value="role">Voter</option>
-    <option value="role">Group</option>
+    <option value="1">Voter</option>
+    <option value="2">Group</option>
 </select>
 
 </div>

@@ -14,17 +14,6 @@ $filetemp=$image['tmp_name'];
 
 $insert = mysqli_query($connect,"INSERT INTO user(name,pass,province,role,status,votes,gender,addr,photo) VALUES('$name','$password','$province','$role',0,0,'$gender','$addr','$filetemp')" );
 if($insert){
-    echo` <script>
-    alert("sucess");
-    window.location="../"
-    </script>
-    `;
-    }
-    else{
-        echo` <script>
-    alert("error");
-    window.location="../"
-    </script>
-    `;
+    exit();
     }
     
